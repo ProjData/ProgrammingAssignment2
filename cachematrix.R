@@ -1,9 +1,14 @@
 # In the following I will create two functions that are used to cache the
-# inverse of a matrix. For this, we assume that the us given matrix is always
+# inverse of a matrix. For this, we assume that the given matrix is always
 # invertable.
 
 # makeCacheMatrix creates a special 'matrix' object 
-# that can cache its inverse for efficient computation
+# that can cache its inverse for efficient computation.
+# It creates a list containing functions to 
+#       1. set the matrix
+#       2. get the matrix
+#       3. set the inverse
+#       4. get the inverse
 
 makeCacheMatrix <- function(x = matrix()){
     inv <- NULL
